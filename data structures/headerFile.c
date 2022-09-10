@@ -127,7 +127,7 @@ int main()
 		{
 			curr1 = (t_item*)malloc(sizeof(t_item));
 			read = fread(curr1, sizeof(t_item), 1, f);
-			newItem(curr1->val, curr1->key, id);
+			newItem2(curr1->val, curr1->key, id);
 			id++;
 			free(curr1);
 		}
@@ -139,7 +139,7 @@ int main()
 		{
 			curr2 = (t_item2*) malloc(sizeof(t_item2));
 			read = fread(curr2, sizeof(t_item2), 1, f);
-			newItem(curr2->val, curr2->key, curr2->id);
+			newItem2(curr2->val, curr2->key, curr2->id);
 			free(curr2);
 		}
 	}
