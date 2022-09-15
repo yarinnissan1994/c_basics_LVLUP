@@ -3,7 +3,7 @@
 #include <string.h>
 #pragma warning (disable : 4996)
 
-int main23_443()
+int main()
 {
 	//struct
 
@@ -71,19 +71,19 @@ int main23_443()
 	// free
 	free(list);
 
-	//f = fopen("Students.dat", "r");
-	//if (!f)
-	//{
-	//	//ERROR
-	//}
-	//else
-	//{
-	//	fread(list, sizeof(struct Student), userSize, f);
-	//	for (int i = 0; i < userSize; i++)
-	//	{
-	//	printf("%s\t%d\t%d", s.name, s.age, s.classlevel);
-	//	}
-	//	fclose(f);
-	//}
+	f = fopen("Students.dat", "r");
+	if (!f)
+	{
+		//ERROR
+	}
+	else
+	{
+		fread(list, sizeof(struct Student), userSize, f);
+		for (int i = 0; i < userSize; i++)
+		{
+		printf("%s\t%d\t%d", s.name, s.age, s.classlevel);
+		}
+		fclose(f);
+	}
 	return 0;
 }

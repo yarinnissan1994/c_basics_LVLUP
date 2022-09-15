@@ -4,7 +4,7 @@
 #include <time.h>
 #pragma warning (disable : 4996)
 
-int main412_99()
+int main()
 {
     time_t i = time(0);//unix time (seconds count from 1.1.1970 (00:00 Am))
     srand(i);

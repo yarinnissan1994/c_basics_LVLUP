@@ -2,46 +2,46 @@
 #include <stdlib.h>
 #include <string.h>
 #pragma warning (disable : 4996)
-int main1()
+int main()
 {
-	//char* fileName = "C:\\Users\\User\\Desktop\\C yarin\\new.txt";
-	//char* relativFileName = "new.txt";
+	char* fileName = "C:\\Users\\User\\Desktop\\C yarin\\new.txt";
+	char* relativFileName = "new.txt";
 
 
-	//char* str;
-	//str = malloc(100);
-	//strcpy(str, "C:\\Users\\User\\Desktop\\C yarin\\new.txt");
+	char* str;
+	str = malloc(100);
+	strcpy(str, "C:\\Users\\User\\Desktop\\C yarin\\new.txt");
 
-	//// r - open for reading
-	//// w - open for writing (overwrite already existed data)
-	//// a - open for append to end of file
+	// r - open for reading
+	// w - open for writing (overwrite already existed data)
+	// a - open for append to end of file
 
-	//FILE* f = fopen(relativFileName, "w");
-	//
-	//if (f != NULL)
-	//{
-	//fputc('a', f);
-	//fputc('b', f);
-	//fputc('b', f);
-	//fputc('1', f);
-	//fputc('2', f);
-	//fputc('3', f);
-	//fputc('\n', f);
-	//fputc('3', f);
-	//fputc('2', f);
-	//fputc('1', f);
-	//fputc('c', f);
-	//fputc('b', f);
-	//fputc('a', f);
-	//}
+	FILE* f = fopen(relativFileName, "w");
+	
+	if (f != NULL)
+	{
+	fputc('a', f);
+	fputc('b', f);
+	fputc('b', f);
+	fputc('1', f);
+	fputc('2', f);
+	fputc('3', f);
+	fputc('\n', f);
+	fputc('3', f);
+	fputc('2', f);
+	fputc('1', f);
+	fputc('c', f);
+	fputc('b', f);
+	fputc('a', f);
+	}
 
-	//else
-	//{
-	//	// error
-	//	fopen(relativFileName, "r");
-	//}
+	else
+	{
+		// error
+		fopen(relativFileName, "r");
+	}
 
-	//fclose(f);
+	fclose(f);
 
 	/*cw1
 	char* relativAstFile = "Astrix.txt";

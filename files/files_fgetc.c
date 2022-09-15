@@ -3,123 +3,123 @@
 #include <string.h>
 #pragma warning (disable : 4996)
 
-//void charCount(FILE* f)
-//{
-//	if (f == NULL)
-//	{
-//		//problem
-//		//eror massege
-//	}
-//	else
-//	{
-//		char ch = fgetc(f);
-//		int count = 0;
-//		while (ch != EOF)
-//		{
-//			ch = fgetc(f);
-//			count++;
-//		}
-//		printf("\nnumber of characters in this file : %d\n", count);
-//	}
-//}
-//void astCount(FILE* f)
-//{
-//	if (f == NULL)
-//	{
-//		//problem
-//		//eror massege
-//	}
-//	else
-//	{
-//		char ch = fgetc(f);
-//		int count = 0;
-//		if (ch == '*')
-//		{
-//			count++;
-//		}
-//		while (ch != EOF)
-//		{
-//			ch = fgetc(f);
-//			if (ch == '*')
-//			{
-//				count++;
-//			}
-//		}
-//		printf("\nnumber of astrix in this file : %d\n", count);
-//	}
-//}
-//void lineCount(FILE* f)
-//{
-//	if (f == NULL)
-//	{
-//		//problem
-//		//eror massege
-//	}
-//	else
-//	{
-//		char ch = fgetc(f);
-//		int count = 1;
-//		while (ch != EOF)
-//		{
-//			ch = fgetc(f);
-//			if (ch == '\n')
-//			{
-//				count++;
-//			}
-//		}
-//		printf("\nnumber of lines in this file : %d\n", count);
-//	}
-//}
-//int* intMalloc(int num)
-//{
-//	int* ptr;
-//	ptr = malloc(sizeof(int) * num);
-//	return ptr;
-//}
-//char* charMalloc(char num)
-//{
-//	char* ptr;
-//	ptr = malloc(sizeof(char) * num);
-//	return ptr;
-//}
-//void intUserInput(int* adress, char num)
-//{
-//	int* ptr = adress;
-//	int* original = adress;;
-//	for (int i = 0; i < num; i++)
-//	{
-//		printf("please enter a number:\n");
-//		scanf("%d", ptr);
-//		ptr++;
-//	}
-//	ptr = original;
-//	for (int i = 0; i < num; i++)
-//	{
-//		printf("%d\t", *ptr);
-//		ptr++;
-//	}
-//}
-//void charUserInput(char* adress, char num)
-//{
-//	int* ptr = adress;
-//	int* original = adress;;
-//	for (int i = 0; i < num; i++)
-//	{
-//		printf("please enter a number:\n");
-//		scanf("%d", ptr);
-//		ptr++;
-//	}
-//	ptr = original;
-//	for (int i = 0; i < num; i++)
-//	{
-//		printf("%d\t", *ptr);
-//		ptr++;
-//	}
-//}
-//
+void charCount(FILE* f)
+{
+	if (f == NULL)
+	{
+		//problem
+		//eror massege
+	}
+	else
+	{
+		char ch = fgetc(f);
+		int count = 0;
+		while (ch != EOF)
+		{
+			ch = fgetc(f);
+			count++;
+		}
+		printf("\nnumber of characters in this file : %d\n", count);
+	}
+}
+void astCount(FILE* f)
+{
+	if (f == NULL)
+	{
+		//problem
+		//eror massege
+	}
+	else
+	{
+		char ch = fgetc(f);
+		int count = 0;
+		if (ch == '*')
+		{
+			count++;
+		}
+		while (ch != EOF)
+		{
+			ch = fgetc(f);
+			if (ch == '*')
+			{
+				count++;
+			}
+		}
+		printf("\nnumber of astrix in this file : %d\n", count);
+	}
+}
+void lineCount(FILE* f)
+{
+	if (f == NULL)
+	{
+		//problem
+		//eror massege
+	}
+	else
+	{
+		char ch = fgetc(f);
+		int count = 1;
+		while (ch != EOF)
+		{
+			ch = fgetc(f);
+			if (ch == '\n')
+			{
+				count++;
+			}
+		}
+		printf("\nnumber of lines in this file : %d\n", count);
+	}
+}
+int* intMalloc(int num)
+{
+	int* ptr;
+	ptr = malloc(sizeof(int) * num);
+	return ptr;
+}
+char* charMalloc(char num)
+{
+	char* ptr;
+	ptr = malloc(sizeof(char) * num);
+	return ptr;
+}
+void intUserInput(int* adress, char num)
+{
+	int* ptr = adress;
+	int* original = adress;;
+	for (int i = 0; i < num; i++)
+	{
+		printf("please enter a number:\n");
+		scanf("%d", ptr);
+		ptr++;
+	}
+	ptr = original;
+	for (int i = 0; i < num; i++)
+	{
+		printf("%d\t", *ptr);
+		ptr++;
+	}
+}
+void charUserInput(char* adress, char num)
+{
+	int* ptr = adress;
+	int* original = adress;;
+	for (int i = 0; i < num; i++)
+	{
+		printf("please enter a number:\n");
+		scanf("%d", ptr);
+		ptr++;
+	}
+	ptr = original;
+	for (int i = 0; i < num; i++)
+	{
+		printf("%d\t", *ptr);
+		ptr++;
+	}
+}
 
 
-int main2_1()
+
+int main()
 {
 	/* exemple
 	FILE* f;
@@ -127,8 +127,8 @@ int main2_1()
 	f = fopen("C:\\Users\\User\\Desktop\\C yarin\\data.txt", "r");
 	if (f == NULL)
 	{
-		//problem
-		//eror massege
+		problem
+		eror massege
 	}
 	else
 	{
@@ -149,8 +149,8 @@ int main2_1()
 	f = fopen("C:\\Users\\User\\Desktop\\C yarin\\File1.txt", "r");
 	if (f == NULL)
 	{
-		//problem
-		//eror massege
+		problem
+		eror massege
 	}
 	else
 	{
@@ -179,8 +179,8 @@ int main2_1()
 	f2 = fopen("C:\\Users\\User\\Desktop\\C yarin\\File2.txt", "r");
 	if (f2 == NULL)
 	{
-		//problem
-		//eror massege
+		problem
+		eror massege
 	}
 	else
 	{
@@ -199,14 +199,14 @@ int main2_1()
 	lineCount(f2);
 	fclose(f2);*/
 
-	//*
+	*
 	FILE* f3;
 
 	f3 = fopen("C:\\Users\\User\\Desktop\\C yarin\\File3.txt", "r");
 	if (f3 == NULL)
 	{
-		//problem
-		//eror massege
+		problem
+		eror massege
 	}
 	else
 	{
@@ -231,7 +231,7 @@ int main2_1()
 					printf("allocated %d bytes\n\n", (holder * sizeof(char)));
 					charUserInput(Cadress, holder);
 					printf("\n\n");
-					//free(Cadress);
+					free(Cadress);
 				}
 				else
 				{
@@ -247,6 +247,6 @@ int main2_1()
 		}
 	}
 	fclose(f3);
-	//*/
+	*/
 	return 0;
 }
